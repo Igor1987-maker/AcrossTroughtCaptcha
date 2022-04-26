@@ -1,4 +1,3 @@
-
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Assertions;
@@ -16,7 +15,7 @@ public class SmsTest extends BaseSelenideTest {
     @BeforeEach
     public void setUpExtension(){
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addExtensions(new File("/Users/igor.prozorow/OneDrive - Qualitest Group/Documents/Projects/AcrossTroughtCaptcha/src/test/resources/modheader.crx"));
+        chromeOptions.addExtensions(new File("/Qa29 Projects/AcrossTroughtCaptcha/src/test/resources/modheader.crx"));
         Configuration.browserCapabilities = new DesiredCapabilities();
         Configuration.browserCapabilities.setCapability(ChromeOptions.CAPABILITY,chromeOptions);
         addCookie();
@@ -46,14 +45,14 @@ public class SmsTest extends BaseSelenideTest {
         NumberPage numberPage = new NumberPage();
         PhoneData phoneData = smsApi.getPhone();
         try {
-            Thread.sleep(7000);
+            Thread.sleep(8000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         String uiId = numberPage.getPhoneId();
         String uiPhone = numberPage.getPhoneNumber();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

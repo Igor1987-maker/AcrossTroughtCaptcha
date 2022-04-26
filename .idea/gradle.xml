@@ -6,7 +6,7 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../../TOOLS/gradle-7.3.3" />
+        <option name="gradleHome" value="C:/Tools/gradle-7.2" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
